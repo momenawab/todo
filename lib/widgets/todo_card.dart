@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../models/todo_model.dart';
 
 // ignore: must_be_immutable
@@ -67,15 +66,7 @@ class _TodocardState extends State<Todocard> {
                   ),
                 ),
                 const SizedBox(height: 5),
-                Text(
-                  DateFormat('dd MMM yyyy - hh:mm aaa')
-                      .format(widget.creationDate),
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFF8F8F8F),
-                  ),
-                ),
+
               ],
             ),
           ),
